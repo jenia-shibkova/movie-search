@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "GoodCompPro-Book";
+  src: url("../assets/fonts/GoodCompPro-Book.eot");
+  src: url("../assets/fonts/GoodCompPro-Book.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/GoodCompPro-Book.woff") format("woff"),
+       url("../assets/fonts/GoodCompPro-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;    
+  font-display: swap
+}
+
+@font-face {
+  font-family: "GoodCompPro-Bold";
+  src: url("../assets/fonts/GoodCompPro-Bold.eot");
+  src: url("../assets/fonts/GoodCompPro-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../assets/fonts/GoodCompPro-Bold.woff") format("woff"),
+       url("../assets/fonts/GoodCompPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

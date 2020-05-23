@@ -1,0 +1,130 @@
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+
+.slider-wrapper {  
+  max-width: 1060px;
+  margin: 0 auto;  
+  padding-bottom: 60px; 
+}
+
+.slide__image-wrapper {  
+  position: relative;
+  pointer-events: none;
+}
+
+.slide {
+  width: 234px;
+  min-height: 410px;
+  margin: 0 15px;
+}
+
+.slide__inner-wrapper {
+  position: relative;
+  width: 234px;
+}
+
+.slide__film-rating {
+  position: absolute;
+  top: 16px;
+  left: -6px;
+  background-color: #3bb33b;
+  color: #fff; 
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  padding: 5px 11px 4px;
+  z-index: 15;
+}
+
+.slide__image {  
+  width: 234px;
+  height: 360px;
+  border-radius: 4px;
+  object-fit: cover;  
+  pointer-events: none;
+}
+
+.slide__link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.slide__film-title {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+.slide__film-desc {
+  font-size: 13px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+ 
+.slide__film-info {
+  font-size: 13px;
+  line-height: 14px;
+  color: #e30045;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.slider__desc {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .slider-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }  
+}
+
+@media (max-width: 1099px) {
+  .slider-wrapper {
+    max-width: 830px;
+  }  
+}
+
+@media (max-width: 900px) {
+  .slider-wrapper {
+    max-width: 920px;
+  }  
+}
+
+@media (max-width: 900px) {
+  .slider-wrapper {
+    width: 560px;
+  }  
+}
+
+@media (max-width: 639px) {
+  .slider-wrapper {
+    width: 90%;
+  }
+
+  .slide__inner-wrapper, .slide {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}

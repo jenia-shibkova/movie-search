@@ -1,0 +1,29 @@
+.footer {
+  background-color: #1f1f1f;
+  flex: 0 0 auto;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.footer__link {
+  color: $default-color;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: #e30045;
+}
+
+.footer__link--github {
+  padding-left: 30px;
+  background-image: url("../assets/img/github-logo.svg");
+  background-repeat: no-repeat;
+}

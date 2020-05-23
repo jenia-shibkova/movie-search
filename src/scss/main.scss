@@ -1,0 +1,81 @@
+@import
+  "utils/vars";
+
+@import
+  "base/fonts";
+
+@import "vendors/normalize";
+
+@import 
+  "components/button",
+  "components/controls",
+  "components/switcher",
+  "components/error",
+  "components/modal",
+  "components/progress-bar";
+
+@import 
+  "layout/header",
+  "layout/search",
+  "layout/footer",
+  "layout/slider",
+  "layout/keyboard",
+  "layout/key";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.app {
+  position: relative;
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none ;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 680px;
+  }  
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 440px;
+    padding: 0 10px;
+  }  
+}
+
+@media (max-width: 460px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }  
+}

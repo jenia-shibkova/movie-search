@@ -1,0 +1,184 @@
+.key {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  color: $mainFontColor;
+  background-color: $default-color;
+  border: 1px solid RGB(243, 243, 243);
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+          box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-transition: border-radius .2s, background-color .2s;
+  -o-transition: border-radius .2s, background-color .2s;
+  transition: border-radius .2s, background-color .2s
+}
+
+.key.Enter {
+  width: 40px;
+  background-image: url("../assets/img/enter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;   
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key.Backspace {
+  width: 40px;  
+  background-image: url("../assets/img/backspace.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;  
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key.Delete {  
+  width: 40px;   
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; 
+}
+
+.key.ShiftLeft,
+.key.ShiftRight {
+  width: 40px;  
+  background-image: url("../assets/img/shift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}
+
+.key.ContolLeft,
+.key.ContolRight {
+  width: 80px;
+}
+
+.key.CapsLock {  
+  width: 40px;  
+  background-image: url("../assets/img/capslock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;   
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key.Space {
+  width: 80px;
+}
+
+.key.ShiftLeft,
+.key.ShiftRight {  
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key.ControlRight {
+  width: 37px;
+}
+
+.key.ControlLeft {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.key.Space {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+
+// .key.Enter,
+// .key.ShiftLeft,
+// .key.ShiftRight,
+// .key.Backquote,
+// .key.CapsLock,
+// .key.Space,
+// .key.Backspace,
+// .key.Delete,
+// .key.ControlLeft,
+// .key.ControlRight,
+// .key.AltLeft,
+// .key.AltRight,
+// .key.ArrowLeft,
+// .key.ArrowRight {
+//   background-color: RGB(243, 243, 243);
+// }
+
+.down,
+.up {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.en, .ru {  
+  pointer-events: none;
+}
+
+.off {
+  display: none;
+}
+
+.key:hover,
+.key:focus,
+.key:active {
+  background-color: RGB(243, 243, 243);
+}
+
+.key--active {
+  background-color: RGB(243, 243, 243);
+  border-radius: 25%;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.24);
+          box-shadow: 0 2px 4px rgba(0,0,0,0.24);
+}
+
+.key.Backquote.key--active,
+.key.Delete.key--active,
+.key.ControlLeft.key--active,
+.key.ControlRight.key--active,
+.key.AltLeft.key--active,
+.key.AltRight.key--active,
+.key.ArrowLeft.key--active,
+.key.ArrowRight.key--active {
+  background-color: RGB(243, 243, 243);
+  border-radius: 25%;
+}
+
+.key.ShiftLeft.key--active,
+.key.ShiftRight.key--active,
+.key.Enter.key--active,
+.key.CapsLock.key--active,
+.key.Backspace.key--active,
+.key.Space.key--active {
+  background-color: RGB(243, 243, 243);
+  border-radius: 15px;
+}
+
+@media (max-width: 374px) {
+  .key {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    margin: 2px;
+  }  
+}

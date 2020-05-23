@@ -1,0 +1,83 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;  
+  z-index: 5;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__content {
+  min-width: 400px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  padding: 40px;  
+  position: relative;
+}
+
+.modal__main-title {
+  font-size: 18px;  
+  margin-top: 0;
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/img/clear-black.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.4s;
+}
+
+.modal__close:hover,
+.modal__close:active,
+.modal__close:focus {
+  background-image: url("../assets/img/clear-pink.svg");
+}
+
+.modal__title {
+  width: 156px;
+  opacity: 0.5;
+  font-size: 13px;
+  color: #1f1f1f;
+  margin: 0;
+}  
+
+.modal__desc {
+  font-size: 14px;
+  line-height: 15px;
+  color: #1f1f1f;
+  margin: 0;
+}
+
+.modal__desc--plot,
+.modal__desc--writer {
+  width: 400px;
+}
+
+.modal__row {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(31,31,31,0.1);
+}  
